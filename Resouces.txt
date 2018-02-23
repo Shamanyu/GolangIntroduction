@@ -1,2 +1,5 @@
+Installation
+  https://golang.org/doc/install?download=go1.10.linux-amd64.tar.gz
+
 Tour
   https://tour.golang.org/welcome/1
