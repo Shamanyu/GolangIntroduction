@@ -6,14 +6,14 @@ import (
 )
 
 type Vertex struct {
-  X, Y float64
+  X, Y, Z float64
 }
 
 func Abs(v Vertex) float64 {
-  return math.Sqrt(v.X*v.X + v.Y*v.Y)
+  return math.Sqrt(v.X*v.X + v.Y*v.Y + v.Z+v.Z)
 }
 
 func main() {
-  v:= Vertex{3, 4}
+  v := Vertex{3, 4, 5}
   fmt.Println(Abs(v))
 }
