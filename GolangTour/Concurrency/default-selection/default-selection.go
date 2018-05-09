@@ -6,12 +6,15 @@ import (
 )
 
 func main() {
-  tick := time.Tick(100 * time.Millisecond)
-  boom := time.Tick(500 * time.Millisecond)
+  tick1 := time.Tick(1000 * time.Millisecond)
+  tick2 := time.Tick(1000 * time.Millisecond)
+  boom := time.Tick(5500 * time.Millisecond)
   for {
     select {
-    case <-tick:
-      fmt.Println("tick.")
+    case <-tick1:
+      fmt.Println("tick1.")
+    case <-tick2:
+      fmt.Println("tick2.")
     case <-boom:
       fmt.Println("boom.")
     default:
