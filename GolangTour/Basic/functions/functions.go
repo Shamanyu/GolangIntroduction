@@ -41,4 +41,5 @@ func main() {
 	fmt.Println(basicOperations("/", 100, -5))
 	fmt.Println(basicOperations("/", 100, 0))
 	fmt.Println(basicOperations("/", -100, 0))
+	fmt.Println(basicOperations("$", 300, 0))
 }

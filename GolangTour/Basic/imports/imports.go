@@ -10,4 +10,5 @@ import (
 func main() {
   rand.Seed(time.Now().UTC().UnixNano())
   fmt.Printf("Would you rather have %d problems or %d problems?\n", int(math.Sqrt(25)), rand.Intn(10))
+  fmt.Println("It's okay, you can talk to me")
 }
