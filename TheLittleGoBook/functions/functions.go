@@ -2,6 +2,7 @@ package main
 
 import (
   "fmt"
+  "strings"
 )
 
 func log(message string) {
@@ -28,6 +29,12 @@ func powerPrint(name string, power int, exists bool) {
   }
 }
 
+func namedReturner(name1, name2 string) (capName1, capName2 string) {
+  capName1 = strings.Title(name1)
+  capName2 = strings.Title(name2)
+  return
+}
+
 func main() {
   log("Bhai ye message print kardoge terminal pe?")
   sum := add(2, 3)
@@ -38,4 +45,6 @@ func main() {
   name = "Shamanyu"
   value, exists = power(name)
   powerPrint(name, value, exists)
+  lover1, lover2 := namedReturner("cutieKid", "strictKid")
+  fmt.Printf("%s loves %s\n", lover1, lover2)
 }
