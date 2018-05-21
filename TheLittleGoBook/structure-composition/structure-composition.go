@@ -18,6 +18,10 @@ type AncientPokemon struct {
   age int
 }
 
+func (ap *AncientPokemon) Introduce() {
+  fmt.Printf("Hi, I am %s with an age of %d\n", ap.name, ap.age)
+}
+
 func main() {
   articuno := &AncientPokemon{
     Pokemon: &Pokemon{
@@ -27,6 +31,7 @@ func main() {
     age: 20001,
   }
   articuno.Introduce()
+  articuno.Pokemon.Introduce()
   fmt.Println(*articuno)
   fmt.Println(articuno.name, articuno.Pokemon.name)
 }
