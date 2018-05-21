@@ -1,22 +1,22 @@
 package main
 
 import (
-  // "fmt"
+// "fmt"
 )
 
 type Logger interface {
-  Log(message string)
+	Log(message string)
 }
 
 type Server struct {
-  logger Logger
+	logger Logger
 }
 
 func process(logger Logger) {
-  logger.Log("Hello!")
+	logger.Log("Hello!")
 }
 
-type ConsoleLogger struct {}
+type ConsoleLogger struct{}
 
 func main() {
 

@@ -1,16 +1,16 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 type lamePerson struct {
-  name string
-  levelOfLameness int
+	name            string
+	levelOfLameness int
 }
 
 func main() {
-  doshi := new(lamePerson)
-  flyingParrot := &lamePerson{}
-  fmt.Println(*doshi, *flyingParrot)
+	doshi := new(lamePerson)
+	flyingParrot := &lamePerson{}
+	fmt.Println(*doshi, *flyingParrot)
 }

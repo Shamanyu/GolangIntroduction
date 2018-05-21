@@ -1,10 +1,10 @@
 package main
 
 import (
-  "shopping_revisit"
-  "fmt"
+	"fmt"
+	"shopping_revisit"
 )
 
 func main() {
-  fmt.Println(shopping_revisit.PriceCheck(43413))
+	fmt.Println(shopping_revisit.PriceCheck(43413))
 }

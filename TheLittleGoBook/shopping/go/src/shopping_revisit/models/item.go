@@ -1,5 +1,5 @@
 package models
 
 type Item struct {
-  Price float64
+	Price float64
 }
