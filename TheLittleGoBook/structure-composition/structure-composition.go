@@ -28,4 +28,5 @@ func main() {
   }
   articuno.Introduce()
   fmt.Println(*articuno)
+  fmt.Println(articuno.name, articuno.Pokemon.name)
 }
