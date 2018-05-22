@@ -10,7 +10,7 @@ type Worker struct {
   id int
 }
 
-func (w Worker) process(c chan int) {
+func (w *Worker) process(c chan int) {
   for {
     data := <-c
     fmt.Printf("Worker %d got %d\n", w.id, data)
@@ -20,7 +20,7 @@ func (w Worker) process(c chan int) {
 func main() {
   c := make(chan int)
   for i:=0; i<4; i++ {
-    worker := Worker{id: i}
+    worker := &Worker{id: i}
     go worker.process(c)
   }
   for {
