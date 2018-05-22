@@ -26,6 +26,7 @@ func main() {
   }
   for {
     c <- rand.Int()
+    fmt.Printf("Length of channel is %d\n", len(c))
     time.Sleep(time.Millisecond*10)
   }
 }
